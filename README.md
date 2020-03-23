@@ -7,3 +7,15 @@ You can take the benefits of the features provided by the admin using the follow
 > Email : adi@gmail.com
 
 > Password : 1234
+
+#About this app:
+
+Here, most of the folders and files are just configurations and extras.
+
+The main folders include :
+
+>models
+
+>controllers
+
+>views
