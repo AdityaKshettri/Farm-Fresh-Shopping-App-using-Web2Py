@@ -8,7 +8,7 @@ You can take the benefits of the features provided by the admin using the follow
 
 > Password : 1234
 
-#About this app:
+# About this app:
 
 Here, most of the folders and files are just configurations and extras.
 
