@@ -1,0 +1,37 @@
+{{extend 'layout.html'}}
+<h1>Farm Fresh Produce and More</h1>
+<hr>
+{{for x in rows:}}
+<div class='row'>
+    <img class='col col-lg-4 col-md-6 col-sm-6 col-xs-12' src='{{=x.product_image}}' alt='image' />
+    <div class='col col-lg-8 col-md-6 col-sm-6 col-xs-12'>
+        <p class='lead'>
+            <b>{{=x.product_name}}</b>
+        </p>
+        <p>
+            {{=x.product_price}}
+        </p>
+        <p>
+            {{=x.farm_name}}
+        </p>
+        <p>
+            {{=x.farm_address}}
+        </p>
+        <p>
+            <a href='{{=x.farm_website}}' target='_new'>{{=x.farm_website}}</a>
+        </p>
+        <p>
+            <form method='post' action='proc'>
+                <input type='hidden' name='productId' value='{{=x.id}}' />
+                <input type='text' size=2 name='qty' value=1 />
+                <input class='btn-primary' type='submit' value='Add to Cart' />
+            </form>
+        </p>
+        <p>
+            Posted By : {{=userdict[x.created_by]}}
+        </p>
+    </div>
+</div>
+<hr>
+{{pass}}
+<a href='post'>Post</a>

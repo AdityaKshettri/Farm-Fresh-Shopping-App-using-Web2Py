@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+<h1>Post Product</h1>
+{{=form}}
+<hr>
+|<a href='view'>View</a>|<a href='../profile/save/'>Profile</a>|<a href='myposts'>My Posts</a>

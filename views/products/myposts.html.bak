@@ -1,0 +1,27 @@
+{{extend 'layout.html'}}
+<h1>My Posts</h1>
+<hr>
+{{for x in rows:}}
+<div class='row'>
+    <img class='col col-lg-4 col-md-6 col-xs-12' src='{{=x.product_image}}' alt='image' />
+    <div class='col col-lg-8 col-md-6 col-sm-6 col-xs-12'>
+        <p class='lead'>
+            <b>{{=x.product_name}}</b>
+        </p>
+        <p>
+            <b>{{=x.product_price}}</b>
+        </p>
+        <p>
+            <a href='update/{{=x.id}}'>Update</a>
+        </p>
+        <p>
+            {{=x.farm_name}}
+        </p>
+        <p>
+            {{=x.farm_address}}
+        </p>
+        <p>
+            <a href='{{=x.farm_website}}' target='_new'>{{=x.farm_website}}</a>
+        </p>
+    </div>
+</div>

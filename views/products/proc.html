@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+<h1>Shopping Cart</h1>
+
+<p>
+    The Item was added to your cart.
+</p>
+
+<table class='table striped-table table-hover'>
+    {{for x in rows:}}
+    <tr>
+        <td>{{=x.qty}}</td>
+        <td>{{=prodDict[x.productId]}}</td>
+        <td><a href='delete'>Delete</a></td>
+    </tr>
+    {{pass}}
+</table>
+<br>
+<hr>
+<a href='view'>Continue Shopping</a>
+<button>Checkout</button>
